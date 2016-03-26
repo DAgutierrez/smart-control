@@ -1,0 +1,95 @@
+<div class="navbar-fixed">
+
+    <nav  class="cyan " >
+        <div class="nav-wrapper container">
+
+            <a href="#!" class="brand-logo">
+                <h5 class="white-text" >Smart Devices Control</h5>
+            </a>
+
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+            <ul id="dropdown1"  class="dropdown-content">
+                <li><a href="#!">red</a></li>
+                <li><a href="/">camara</a></li>
+                <li class="divider"></li>
+                <li><a href="sensor/pir">Sensores</a></li>
+            </ul>
+
+            <ul class="right  hide-on-med-and-down">
+                <li >
+                    <a class="waves-effect waves-light " id="toggle-search" href="#!">
+                        <i class="large mdi-action-search"></i>
+                    </a>
+                </li>
+                <li><a class="cyan-text text-lighten-5" href="#">Favoritos</a></li>
+                <li><a class="cyan-text text-lighten-5" href="#">Mi Hogar</a></li>
+                <li><a class="cyan-text text-lighten-5" href="#">Agregar dispositivo</a></li>
+                <li>
+                    <a class="waves-effect waves-light dropdown-button cyan-text text-lighten-5" href="#!" data-beloworigin="true" data-activates="dropdown1">Configuraciones<i class="material-icons right">arrow_drop_down</i></a>
+                </li>
+
+            </ul>
+
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                 <li>
+                    <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="drop-1"> Dropdown <i class="mdi-navigation-arrow-drop-down right"></i></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+</div>
+
+    <div id="search" class="row white-text grey darken-3" >
+
+        <div class="container">
+            <form method="get" >
+                <input class="form-control" type="text" placeholder="Search ..." name="q"></input>
+
+                <input type="hidden" value="makoframework.com" name="as_sitesearch"></input>
+            </form>
+        </div>
+
+    </div>
+
+
+<script>
+
+    // Toggle search
+
+    $('#toggle-search').click(function()
+    {
+
+        var search = $('#search');
+        if (search.is(":visible") )
+        {
+            search.slideUp("slow");
+        }
+        else
+        {
+            search.slideDown("slow",function() {
+                search.find('input').focus();
+            });
+        }
+
+        return false;
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<div class="container cont-main  ">
+
+    <div class="row cyan cont_titulo ">
+      <div class="col s12 ">
+          <div class="section titulo ">
+            <h5 class="white-text center-align ">Camara Ip</h5>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="row white ">
+
+      <div class="col s8">
+        <div class="section cont-camara">
+          <img src="http://192.168.0.11:81/videostream.cgi" style="max-width:100%"alt="">
+        </div>
+      </div>
+
+      <div class="col s4 control-camera">
+        <div class="row">
+          <div class="col s4 offset-s4">
+            <a href="#" ng-mousedown="control.up()" ng-mouseup="control.upStop()"><i class="material-icons black-text icon-size">keyboard_arrow_up</i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s4 ">
+            <a href="#" ng-mousedown="control.left()" ng-mouseup="control.leftStop()"><i class="material-icons black-text icon-size">keyboard_arrow_left</i></a>
+          </div>
+          <div class="col s4 offset-s4">
+            <a href="#" ng-mousedown="control.right()" ng-mouseup="control.rightStop()"><i class="material-icons black-text icon-size">keyboard_arrow_right</i></a>
+          </div>
+        </div>
+
+         <div class="row">
+          <div class="col s4 offset-s4">
+            <a href="#" ng-mousedown="control.down()" ng-mouseup="control.downStop()"><i class="material-icons black-text icon-size">keyboard_arrow_down</i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+<style type="text/css">
+
+.cont-camara {
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.icon-size {
+  font-size: 90px;
+}
+
+.control-camera {
+  padding-top: 8% !important;
+}
+
+.cont_titulo {
+  margin-bottom: 0px;
+}
+
+.titulo {
+  margin-top: 20px;
+
+}
+
+.cont-main {
+margin-top:20px;
+
+}
+
+
+
+</style>

@@ -1,0 +1,72 @@
+<div class="container cont-main  ">
+
+    <div class="row cyan cont_titulo ">
+      <div class="col s12 ">
+          <div class="section titulo ">
+            <h5 class="white-text center-align ">Pir Sensor</h5>
+          </div>
+
+      </div>
+    </div>
+
+    <div class="row white ">
+
+      <div class="col s12">
+        <div class="section cont-camara">
+          
+          <div ng-if="motion.msg == 'Motion'"  >
+            
+            <div class="motion-detected">
+              <h4 class="text-motion">Movimiento Detectado! </h4>
+            </div>
+            
+          </div>
+         
+          
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+<style type="text/css">
+
+.text-motion {
+  padding-top: 25px;
+  padding-left: 80px;
+}
+
+.cont-camara {
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  height: 400px;
+}
+
+.motion-detected {
+  
+  width: 600px;
+  height: 100px;
+  background-color: green;
+}
+
+.cont_titulo {
+  margin-bottom: 0px;
+}
+
+.titulo {
+  margin-top: 20px;
+
+}
+
+.cont-main {
+margin-top:20px;
+
+}
+
+
+
+</style>
