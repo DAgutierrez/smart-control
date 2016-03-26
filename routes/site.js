@@ -6,7 +6,7 @@ module.exports = function(app) {
     site.index
   );
 
-  app.get('/site/home/',
+  app.get('/camera/home/',
     site.home
   );
 
